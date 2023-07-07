@@ -12,14 +12,14 @@ npm install -g generator-drupal-theme-init
 
 ## Usage
 
-- Type the following to command to start the generator. Start this inside the custom theme folder for easier options. 
+- Type the following command to start the generator. Start this inside the custom theme folder for easier options. 
 
 ```
 yo
 ```
   
 - Select **Drupal Theme Init**.
-- Select other options as required.
+- Continue selecting options as per requirement.
 
 To learn more and get started, see the blog post: https://imalabya.co/drupal-theme-init-generator
 

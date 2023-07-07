@@ -1,4 +1,4 @@
-title: My Components/Theme/Button
+title: SDC/Example/My Button
 argTypes:
   iconType:
     defaultValue: power

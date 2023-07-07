@@ -129,13 +129,42 @@ module.exports = class extends Generator {
       { globOptions: { dot: true } }
     );
 
-    // Copy the SASS & JS files
+    // Copy the JS files
     this.fs.copyTpl(
-      this.templatePath("_src/**/*"),
-      this.destinationPath("src"),
+      this.templatePath("_src/js/**/*"),
+      this.destinationPath("src/js"),
       this.props,
       { globOptions: { dot: true } }
     );
+
+    // Copy the SCSS files
+    this.fs.copyTpl(
+      this.templatePath("_src/scss/**/*"),
+      this.destinationPath("src/scss"),
+      this.props,
+      {},
+      {
+        globOptions: {
+          dot: true,
+          ignore: ["**/base/**", "**/base-sdc/**"],
+        },
+      }
+    );
+
+    // Copy Base SCSS files as per options
+    if (this.props.sdc) {
+      this.fs.copyTpl(
+        this.templatePath("_src/scss/base-sdc/**/*"),
+        this.destinationPath("src/scss/base"),
+        this.props
+      );
+    } else {
+      this.fs.copyTpl(
+        this.templatePath("_src/scss/base/**/*"),
+        this.destinationPath("src/scss/base"),
+        this.props
+      );
+    }
 
     // Copy the build files.
     this.fs.copyTpl(
@@ -148,7 +177,10 @@ module.exports = class extends Generator {
     );
     this.fs.copyTpl(
       this.templatePath("eslintrc"),
-      this.destinationPath(".eslintrc")
+      this.destinationPath(".eslintrc"),
+      {
+        sdc: this.props.sdc,
+      }
     );
     this.fs.copyTpl(
       this.templatePath("prettierrc.json"),
@@ -156,7 +188,10 @@ module.exports = class extends Generator {
     );
     this.fs.copyTpl(
       this.templatePath("stylelintrc.json"),
-      this.destinationPath(".stylelintrc.json")
+      this.destinationPath(".stylelintrc.json"),
+      {
+        sdc: this.props.sdc,
+      }
     );
     this.fs.copyTpl(
       this.templatePath("postcss.config.js"),
@@ -164,7 +199,10 @@ module.exports = class extends Generator {
     );
     this.fs.copyTpl(
       this.templatePath("gitignore"),
-      this.destinationPath(".gitignore")
+      this.destinationPath(".gitignore"),
+      {
+        sdc: this.props.sdc,
+      }
     );
     this.fs.copyTpl(
       this.templatePath("babelrc"),

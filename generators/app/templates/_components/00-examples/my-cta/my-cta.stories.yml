@@ -1,4 +1,4 @@
-title: My Components/Theme/Call to Action
+title: SDC/Example/Call to Action
 argTypes:
   target:
     defaultValue: ''

@@ -6,7 +6,12 @@
   ],
   "ignorePatterns": [
     "dist",
+    <%_ if (sdc) { _%>
+    "node_modules",
+    "components/**/*.js"
+    <%_ } else { _%>
     "node_modules"
+    <%_ } _%>
   ],
   "root": true,
   "env": {

@@ -7,7 +7,7 @@
 * {{ attach_library('theme/library') }} or maybe using other methods.
 ********************
 **/
-@import "../settings/settings";
+@use "../settings" as *;
 
 .block__card {
   background: $color--grey;

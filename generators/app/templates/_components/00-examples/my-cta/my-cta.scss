@@ -1,0 +1,10 @@
+@use '../../../src/scss/settings' as *;
+
+.my-cta {
+  margin: 0;
+  padding: 1em 2em;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $color--white;
+  background-color: $color--primary;
+}

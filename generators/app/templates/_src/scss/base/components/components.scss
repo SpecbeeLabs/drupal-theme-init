@@ -4,8 +4,7 @@
 ********************
 **/
 
-@import "../../settings/settings";
-@import "image";
-@import "logo";
-@import "menu";
-@import "breadcrumb";
+@use "image";
+@use "logo";
+@use "menu";
+@use "breadcrumb";

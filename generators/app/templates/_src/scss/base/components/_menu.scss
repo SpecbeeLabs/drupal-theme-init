@@ -3,6 +3,7 @@
 * Main navigation
 ********************
 **/
+@use '../../settings' as *;
 
 #header nav {
   display: flex;

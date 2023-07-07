@@ -4,7 +4,6 @@
 ********************
 **/
 
-@import "../../settings/settings";
-@import "header";
-@import "content";
-@import "footer";
+@use "header";
+@use "content";
+@use "footer";

@@ -1,15 +1,16 @@
 ((Drupal, once) => {
   Drupal.behaviors.button = {
     attach: (context) => {
-      once('my-button', '.my-button', context).array.forEach((button) => {
+      once('my-button', '.my-button', context).forEach((button) => {
         let counter = 0;
         if (!button) {
           return;
         }
         button.addEventListener('click', (event) => {
+          const { currentTarget } = event;
           event.preventDefault();
           counter += 1;
-          this.innerHTML = `${this.innerHTML.replace(
+          currentTarget.innerHTML = `${currentTarget.innerHTML.replace(
             / \([0-9]*\)$/,
             '',
           )} (${counter})`;

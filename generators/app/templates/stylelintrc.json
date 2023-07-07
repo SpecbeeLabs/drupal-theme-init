@@ -6,7 +6,11 @@
     "stylelint-order"
   ],
   "ignoreFiles": [
+    <%_ if (sdc) { _%>
+    "dist/**/*.css", "components/**/*.css"
+    <%_ } else { _%>
     "dist/**/*.css"
+    <%_ } _%>
   ],
   "rules": {
     "at-rule-no-unknown": null,
@@ -484,6 +488,12 @@
         "ignoreValues": [
           "box"
         ]
+      }
+    ],
+    "selector-pseudo-class-no-unknown": [
+      true,
+      {
+        "ignorePseudoClasses": ["export"]
       }
     ]
   }

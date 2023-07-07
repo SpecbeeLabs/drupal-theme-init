@@ -1,0 +1,5 @@
+@use '../settings' as *;
+
+.visually-hidden {
+  @include visually-hidden;
+}

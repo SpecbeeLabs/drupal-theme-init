@@ -1,11 +1,12 @@
 /**
 *********************
-* CKEditor overrides
+* Image
 ********************
 **/
 
 @use '../settings' as *;
 
-.cke_editable {
-  padding: $space;
+img {
+  max-width: 100%;
+  height: auto;
 }

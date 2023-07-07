@@ -3,6 +3,7 @@
 * Breadcrumbs
 ********************
 **/
+@use '../../settings' as *;
 
 .breadcrumb {
   @include no-bullet;

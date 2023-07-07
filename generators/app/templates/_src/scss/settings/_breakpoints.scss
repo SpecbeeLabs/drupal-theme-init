@@ -3,6 +3,7 @@
 * Breakpoint mixin
 ********************
 **/
+@use 'variables' as *;
 
 $breakpoints: (
   "sm": $sm,

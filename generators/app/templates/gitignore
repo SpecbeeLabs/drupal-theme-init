@@ -1,3 +1,7 @@
 # Ignore custom theme build artifacts
 node_modules
 dist
+<%_ if (sdc) { _%>
+components/**/*.css
+components/**/*.js
+<%_ } _%>

@@ -7,7 +7,7 @@ First, install [Yeoman](http://yeoman.io) and generator-drupal-theme-init using 
 
 ```bash
 npm install -g yo
-npm install -g generator-drupal-theme-init
+npm install -g @specbeelabs/generator-drupal-theme-init
 ```
 
 ## Usage

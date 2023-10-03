@@ -1,13 +1,9 @@
 {
-  "name": "generator-drupal-theme-init",
+  "name": "@specbeelabs/generator-drupal-theme-init",
   "version": "1.5.1",
   "description": "A Yeoman generator to scaffold and initialize a Drupal theme.",
   "homepage": "https://github.com/SpecbeeLabs/drupal-theme-init",
-  "author": {
-    "name": "Malabya",
-    "email": "dev@specbee.com",
-    "url": "https://specbee.com"
-  },
+  "author": "Sagar <sagar@specbee.com> (https://specbee.com)",
   "files": [
     "generators"
   ],
@@ -77,6 +73,15 @@
     "pretest": "eslint .",
     "test": "jest"
   },
-  "repository": "SpecbeeLabs/drupal-theme-init",
-  "license": "MIT"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SpecbeeLabs/drupal-theme-init.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SpecbeeLabs/drupal-theme-init/issues"
+  },
+  "directories": {
+    "doc": "docs"
+  }
 }

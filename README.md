@@ -23,5 +23,5 @@ drupal-theme-init
 
 MIT © [Specbee](https://specbee.com)
 
-[npm-image]: https://badge.fury.io/js/@specbeelabs%2Fgenerator-drupal-theme-init.svg
-[npm-url]: https://npmjs.org/package/@specbeelabs/generator-drupal-theme-init
+[npm-image]: https://badge.fury.io/js/@specbeelabs%2Fdrupal-theme-init.svg
+[npm-url]: https://npmjs.org/package/@specbeelabs/drupal-theme-init

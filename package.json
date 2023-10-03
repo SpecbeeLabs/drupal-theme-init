@@ -1,13 +1,16 @@
 {
-  "name": "@specbeelabs/generator-drupal-theme-init",
-  "version": "1.5.2",
+  "name": "@specbeelabs/drupal-theme-init",
+  "version": "1.6.0",
   "description": "A Yeoman generator to scaffold and initialize a Drupal theme.",
   "homepage": "https://github.com/SpecbeeLabs/drupal-theme-init",
   "author": "Sagar <sagar@specbee.com> (https://specbee.com)",
   "files": [
     "generators"
   ],
-  "main": "generators/index.js",
+  "main": "./bin/generator-drupal-theme-init.js",
+  "bin": {
+    "generator-drupal-theme-init": "./bin/generator-drupal-theme-init.js"
+  },
   "keywords": [
     "yeoman-generator",
     "drupal theme",

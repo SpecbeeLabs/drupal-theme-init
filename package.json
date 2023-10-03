@@ -7,9 +7,9 @@
   "files": [
     "generators"
   ],
-  "main": "./bin/generator-drupal-theme-init.js",
+  "main": "./bin/drupal-theme-init.js",
   "bin": {
-    "generator-drupal-theme-init": "./bin/generator-drupal-theme-init.js"
+    "drupal-theme-init": "./bin/drupal-theme-init.js"
   },
   "keywords": [
     "yeoman-generator",

@@ -3,7 +3,7 @@ const path = require("path");
 const assert = require("yeoman-assert");
 const helpers = require("yeoman-test");
 
-describe("generator-drupal-theme-init:app", () => {
+describe("drupal-theme-init:app", () => {
   beforeAll(() =>
     helpers.run(path.join(__dirname, "../generators/app")).withPrompts({
       themeName: "Drupal",

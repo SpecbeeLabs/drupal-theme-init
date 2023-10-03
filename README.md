@@ -1,9 +1,9 @@
 # drupal-theme-init [![NPM version][npm-image]][npm-url]
-🚀 A Yeoman generator to scaffold and initialize a Drupal theme. 🚀
+🚀 Initialize a Drupal theme. 🚀
 
 ## Installation
 
-First, generator-drupal-theme-init using [npm](https://www.npmjs.com/) (we assume you have pre-installed [node.js](https://nodejs.org/)) preferably >=16.
+First, drupal-theme-init using [npm](https://www.npmjs.com/) (we assume you have pre-installed [node.js](https://nodejs.org/)) preferably >=16.
 
 ```bash
 npm install -g @specbeelabs/drupal-theme-init
@@ -14,7 +14,7 @@ npm install -g @specbeelabs/drupal-theme-init
 - Type the following command to start the generator. Start this inside the custom theme folder for easier options. 
 
 ```
-generator-drupal-theme-init
+drupal-theme-init
 ```
 
 - Continue selecting options as per requirement.

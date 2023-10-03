@@ -5,6 +5,6 @@ const env = yeoman.createEnv();
 
 env.register(
   require.resolve("../generators/app/index.js"),
-  "generator-drupal-theme-init"
+  "drupal-theme-init"
 );
-env.run("generator-drupal-theme-init");
+env.run("drupal-theme-init");

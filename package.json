@@ -1,6 +1,6 @@
 {
   "name": "@specbeelabs/drupal-theme-init",
-  "version": "1.6.1",
+  "version": "1.6.2",
   "description": "A Yeoman generator to scaffold and initialize a Drupal theme.",
   "homepage": "https://github.com/SpecbeeLabs/drupal-theme-init",
   "author": "Sagar <sagar@specbee.com> (https://specbee.com)",
@@ -28,6 +28,7 @@
     "lint-staged": "^13.2.2",
     "prettier": "^2.8.8",
     "yeoman-assert": "^3.1.1",
+    "yeoman-environment": "^3.19.3",
     "yeoman-test": "^7.4.0"
   },
   "engines": {

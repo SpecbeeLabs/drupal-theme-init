@@ -1,33 +1,11 @@
+/** @type { import('@storybook/server-webpack5').StorybookConfig } */
 const config = {
-  stories: ["../web/themes/**/*.stories.@(json|yml)", "../web/themes/**/*.mdx"],
+  stories: ["../docroot/**/*.mdx", "../docroot/**/*.stories.json"],
   addons: [
+    "@storybook/addon-webpack5-compiler-swc",
     "@storybook/addon-links",
     "@storybook/addon-essentials",
-    "@lullabot/storybook-drupal-addon",
-    {
-      name: "@storybook/addon-styling",
-      options: {
-        scssBuildRule: {
-          test: /\.s[ac]ss$/i,
-          use: [
-            {
-              loader: "style-loader",
-            },
-            {
-              loader: "css-loader",
-              options: {
-                modules: {
-                  mode: "icss",
-                },
-              },
-            },
-            {
-              loader: "sass-loader",
-            },
-          ],
-        },
-      },
-    },
+    "@chromatic-com/storybook",
   ],
   framework: {
     name: "@storybook/server-webpack5",

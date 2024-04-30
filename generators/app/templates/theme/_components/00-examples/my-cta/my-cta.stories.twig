@@ -1,0 +1,14 @@
+{% stories my_cta with { title: 'Components/Examples/Call to Action' } %}
+
+  {% story default with {
+    name: '1. Default',
+    args: { text: 'Default Call to Action', href: 'https://www.example.org', target: '_blank' }
+  } %}
+    {% include "<%= themeMachineName %>:my-cta" with {
+      text,
+      href,
+      target
+    } %}
+  {% endstory %}
+
+{% endstories %}

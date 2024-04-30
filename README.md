@@ -3,7 +3,7 @@
 
 ## Installation
 
-First, drupal-theme-init using [npm](https://www.npmjs.com/) (we assume you have pre-installed [node.js](https://nodejs.org/)) preferably >=16.
+First, install drupal-theme-init using [npm](https://www.npmjs.com/) (we assume you have pre-installed [node.js](https://nodejs.org/)) preferably >=20.
 
 ```bash
 npm install -g @specbeelabs/drupal-theme-init

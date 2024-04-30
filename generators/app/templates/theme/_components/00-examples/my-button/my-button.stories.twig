@@ -1,0 +1,32 @@
+{% stories my_button with { title: 'Components/Examples/Button' } %}
+
+  {% story default with {
+    name: '1. Default Button',
+    args: { text: 'Default' }
+  } %}
+    {% include "<%= themeMachineName %>:my-button" with {
+      text
+    } %}
+  {% endstory %}
+
+  {% story like  with {
+    name: '1. Like Button',
+    args: { text: 'Like', icon_type: 'like' }
+  } %}
+    {% include "<%= themeMachineName %>:my-button" with {
+      text,
+      icon_type
+    } %}
+  {% endstory %}
+
+  {% story like  with {
+    name: '1. External Button',
+    args: { text: 'External', icon_type: 'external' }
+  } %}
+    {% include "<%= themeMachineName %>:my-button" with {
+      text,
+      icon_type
+    } %}
+  {% endstory %}
+
+{% endstories %}

@@ -107,7 +107,7 @@ module.exports = class extends Generator {
         name: "storybookPath",
         message:
           "Enter the root path relative to the current path for Storybook installation",
-        default: "..",
+        default: "../../../../",
       },
       {
         when(response) {
@@ -276,13 +276,15 @@ module.exports = class extends Generator {
     if (this.props.sdc) {
       const globOptions = { dot: true };
       if (!this.props.storybook) {
-        globOptions.ignore = ["**/*.stories.yml"];
+        globOptions.ignore = ["**/*.stories.twig"];
       }
 
       this.fs.copyTpl(
         this.templatePath("theme/_components/**/*"),
         this.destinationPath("components"),
-        this.props,
+        {
+          themeMachineName: this.props.themeMachineName,
+        },
         {},
         { globOptions }
       );

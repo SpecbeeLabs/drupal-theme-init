@@ -1,6 +1,10 @@
 # Global style
 global:
   css:
+    <%_ if (sdc) { -%>
+    base:
+      dist/css/base/base.css: {}
+    <%_ } else { _%>
     base:
       dist/css/base/base.css: {}
       dist/css/base/typography.css: {}
@@ -8,15 +12,16 @@ global:
       dist/css/base/layout/layout.css: {}
     component:
       dist/css/base/components/components.css: {}
+    <%_ } -%>
   js:
     dist/js/main.js: {}
 
 
 # Component styling
-card:
+example-card:
   css:
     component:
-      dist/css/component/card.css: {}
+      dist/css/components/example-card.css: {}
 
 # Page specific styles
 index:

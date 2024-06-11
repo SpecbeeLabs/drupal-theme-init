@@ -9,19 +9,19 @@
 **/
 @use "../settings" as *;
 
-.block__card {
+.example-card {
   background: $color--grey;
 
-  > .block__card--header {
+  &__header {
     padding: $space;
   }
 
-  > .card__content {
+  &__content {
     border-top: $border;
     border-bottom: $border;
   }
 
-  > .card__footer {
+  &__footer {
     padding: $space;
   }
 }

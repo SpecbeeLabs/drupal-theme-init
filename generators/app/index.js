@@ -162,6 +162,7 @@ module.exports = class extends Generator {
       this.destinationPath(this.props.themeMachineName + ".libraries.yml"),
       {
         includeBootstrap: this.props.includeBootstrap,
+        sdc: this.props.sdc,
       }
     );
 

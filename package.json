@@ -1,6 +1,6 @@
 {
   "name": "@specbeelabs/drupal-theme-init",
-  "version": "2.2.1",
+  "version": "2.2.2",
   "description": "A Yeoman generator to scaffold and initialize a Drupal theme.",
   "homepage": "https://github.com/SpecbeeLabs/drupal-theme-init",
   "author": "Sagar <sagar@specbee.com> (https://specbee.com)",

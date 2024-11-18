@@ -39,16 +39,8 @@
     "order/order": [
       "custom-properties",
       "dollar-variables",
-      {
-        "type": "at-rule",
-        "hasBlock": false
-      },
       "declarations",
-      "rules",
-      {
-        "type": "at-rule",
-        "hasBlock": true
-      }
+      "rules"
     ],
     "order/properties-order": [
       "position",

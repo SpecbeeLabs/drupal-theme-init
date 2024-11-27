@@ -9,4 +9,4 @@
 * library in Twig file using {{ attach_library('theme/library') }} .
 ********************
 **/
-@import "../settings";
+@use '../settings' as *;

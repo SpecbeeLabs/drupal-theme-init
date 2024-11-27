@@ -3,6 +3,7 @@
 * Breakpoint mixin
 ********************
 **/
+@use 'sass:map';
 @use 'variables' as *;
 
 $breakpoints: (
@@ -13,11 +14,11 @@ $breakpoints: (
 );
 
 @mixin breakpoint($screen, $type: min) {
-  @if map_has_key($breakpoints, $screen) {
-    $screen: map_get($breakpoints, $screen);
+  @if map.has-key($breakpoints, $screen) {
+    $screen: map.get($breakpoints, $screen);
 
     @if $type == max {
-      $screen: $screen - 1px;
+      $screen: $screen - 0.0625rem;
     }
 
     @media only screen and (#{$type}-width: $screen) {
